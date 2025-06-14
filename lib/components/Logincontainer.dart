@@ -15,7 +15,7 @@ final screenwidth = MediaQuery.of(context).size.width;
   height: screenheight*0.07,
   decoration: BoxDecoration(
     borderRadius: BorderRadius.circular(22),
-    color: Color(0xffDEDEDE)
+    color: Color(0xffDEDEDE) 
   ),
 child: TextFormField(
   cursorColor: Colors.black,
