@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:lx/buttons/in_upButton.dart';
+import 'package:lx/utils/in_upButton.dart';
 import 'package:lx/components/Logincontainer.dart';
 import 'package:lx/components/small.dart';
 

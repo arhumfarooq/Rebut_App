@@ -1,13 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lx/components/account_container.dart';
+import 'package:lx/components/cutom_appbar.dart';
 
 class MyAccount extends StatelessWidget {
   const MyAccount({super.key});
 
   @override
   Widget build(BuildContext context) {
+     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
+      appBar: custom_appbar(title: "Alice Eve",
+      subtitle: "alice.eve@gmail.com",
+       leading: SizedBox(
+      
+        child: CircleAvatar(
+          backgroundColor: Colors.black,radius: 100,
+        ),
+      ), actions: [
+        Icon(Icons.close_outlined,
+                    size: screenWidth * (33 / 360) , // Corrected icon size
+      
+      color: Color(0xff3C3C3C),)
+      ]
+      
+      ),
       backgroundColor: const Color(0xffF5F5F5),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -15,6 +32,7 @@ class MyAccount extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              SizedBox(height: 53,),
               Text(
                 "My account",
                 style: GoogleFonts.firaSans(
@@ -110,6 +128,8 @@ class MyAccount extends StatelessWidget {
                               ),
                           ),
 
+
+                   
 
             ],
           ),

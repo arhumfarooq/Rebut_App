@@ -10,7 +10,7 @@ final screenwidth = MediaQuery.of(context).size.width;
 
 
     return Scaffold(
-      body: Container(
+      body: SizedBox(
         height: screenheight,
         width: screenwidth,
         child: Image.asset('assets//splash.png')),

@@ -1,12 +1,9 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:lx/view/login.dart';
-import 'package:lx/view/my_account.dart';
-import 'package:lx/view/otp.dart';
-import 'package:lx/view/side_bar.dart';
-import 'package:lx/view/signup.dart';
-import 'package:lx/view/splash_screen.dart';
+import 'package:lx/components/bottom_navigation.dart';
+
+import 'package:lx/view/home_Screen.dart';
 
 void main() => runApp(
   DevicePreview(
@@ -30,7 +27,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
-     home: MyAccount(),
+     home: BottomNavigation(),
     );
   }
 }
