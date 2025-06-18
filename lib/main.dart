@@ -2,6 +2,8 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:lx/components/bottom_navigation.dart';
+import 'package:lx/components/custom_homeapp.dart';
+import 'package:lx/components/search_container.dart';
 
 import 'package:lx/view/home_Screen.dart';
 
