@@ -1,5 +1,5 @@
 
-import 'package:lx/models/home2_class.dart';
+import 'package:lx/models/home/home2_class.dart';
 
 final List<Model> newlist2= [
  Model(

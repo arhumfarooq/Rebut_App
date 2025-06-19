@@ -1,4 +1,4 @@
-import 'package:lx/models/homeclass.dart';
+import 'package:lx/models/home/homeclass.dart';
 
 final List<ProductModel> newlist= [
  ProductModel(

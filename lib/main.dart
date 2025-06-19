@@ -1,11 +1,18 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:lx/components/bottom_navigation.dart';
-import 'package:lx/components/custom_homeapp.dart';
-import 'package:lx/components/search_container.dart';
-
+import 'package:lx/components/cutom_appbar.dart';
+import 'package:lx/components/explore_conatiner/custom_appbar.dart';
+import 'package:lx/view/Side/listing.dart';
+import 'package:lx/view/Side/my_order.dart';
+import 'package:lx/view/addition_in_ui/checkout.dart';
+import 'package:lx/view/addition_in_ui/shipping_add.dart';
+import 'package:lx/view/explore.dart';
 import 'package:lx/view/home_Screen.dart';
+import 'package:lx/view/mainscreen.dart';
+import 'package:lx/view/messages.dart';
+import 'package:lx/view/payments/purchased_form.dart';
+
 
 void main() => runApp(
   DevicePreview(
@@ -29,7 +36,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
-     home: BottomNavigation(),
+     home: PurchasedForm(),
     );
   }
 }

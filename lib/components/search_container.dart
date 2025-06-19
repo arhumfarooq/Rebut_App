@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SearchContainer extends StatelessWidget {
-  const SearchContainer({super.key});
+  final double width1;
+  const SearchContainer({super.key, required this.width1});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +17,7 @@ final screenwidth = MediaQuery.of(context).size.width;
     padding: const EdgeInsets.all(8.0),
     child: Container(
       height: 55,
-      width: double.infinity,
+      width: width1,
       decoration: BoxDecoration(
     
     color: Color(0xffDEDEDE),
